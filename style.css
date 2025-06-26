@@ -1,0 +1,253 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Very light gray */
+    color: #333; /* Dark gray for text */
+}
+
+
+header {
+    background: #222; /* Darker gray */
+    color: #fff; /* White text */
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* White links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #bbb; 
+}
+
+
+.section {
+    padding: 60px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #fff; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+    border-radius: 8px; 
+}
+
+.section:first-of-type {
+    margin-top: 0; 
+}
+
+.section:last-child {
+    margin-bottom: 20px; 
+}
+
+h1, h2 {
+    color: #333; 
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee; 
+    padding-bottom: 15px;
+}
+
+.hero-section {
+    background: #444; 
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 120px 20px; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none; 
+    border-radius: 0; 
+}
+
+.hero-section h1 {
+    font-size: 3.5em; 
+    margin-bottom: 15px;
+    color: #fff;
+    border-bottom: none; 
+    padding-bottom: 0;
+}
+
+.hero-section p {
+    font-size: 1.3em; 
+    max-width: 700px;
+    margin-bottom: 0;
+}
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px; 
+    margin-top: 30px;
+}
+
+.skills-grid div {
+    background-color: #f2f2f2; 
+    padding: 20px; 
+    border-left: 5px solid #666; 
+    border-radius: 8px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
+}
+
+.skills-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-grid ul li {
+    margin-bottom: 8px; 
+}
+
+
+.project-item {
+    background-color: #f2f2f2; /* Lighter gray background */
+    padding: 25px; 
+    margin-bottom: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.project-item h3 {
+    margin-top: 0;
+    color: #444; /* Darker gray heading */
+}
+
+.project-item p {
+    margin-bottom: 15px;
+}
+
+.project-item a {
+    display: inline-block;
+    background-color: #555; 
+    color: #fff;
+    padding: 10px 20px; 
+    text-decoration: none;
+    border-radius: 5px; 
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.project-item a:hover {
+    background-color: #333; /* Darker gray on hover */
+}
+
+
+.certifications-list {
+    list-style: disc;
+    padding-left: 25px; 
+    margin-top: 20px;
+}
+
+.certifications-list li {
+    margin-bottom: 10px; 
+    font-size: 1.1em; 
+}
+
+
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    margin-bottom: 15px; 
+    font-size: 1.1em;
+}
+
+#contact ul li a {
+    color: #555; /* Medium gray links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact ul li a:hover {
+    color: #222; /* Darker gray on hover */
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px; 
+    background: #222; /* Darker gray */
+    color: #fff;
+    margin-top: 30px; 
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05); 
+}
+
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 40px 15px;
+        margin: 15px auto;
+        border-radius: 5px; 
+    }
+
+    .hero-section {
+        padding: 80px 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.8em;
+    }
+
+    .hero-section p {
+        font-size: 1.1em;
+    }
+
+    h1, h2 {
+        margin-bottom: 20px;
+    }
+
+    .skills-grid div,
+    .project-item {
+        border-radius: 5px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; 
+    }
+}
